@@ -18,8 +18,8 @@ export const getNavData = app => [
       {
         name: 'Dashboard',
         icon: 'dashboard',
-        path: 'dashboard'
-      }
+        path: 'dashboard',
+      },
     ],
   },
   {
@@ -30,8 +30,8 @@ export const getNavData = app => [
       {
         name: '帐户',
         icon: 'user',
-        path: 'user'
+        path: 'user',
       },
     ],
-  }
+  },
 ];
