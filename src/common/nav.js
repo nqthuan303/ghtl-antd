@@ -32,6 +32,47 @@ export const getNavData = app => [
           },
         ],
       },
+      {
+        name: 'Vận đơn',
+        icon: 'dashboard',
+        path: 'order',
+        children: [
+          {
+            name: 'Danh sách',
+            path: '',
+            component: dynamicWrapper(app, ['chart'], () => import('../routes/Shop/ShopList')),
+          },
+        ],
+      },
+      {
+        name: 'Chuyến đi lấy',
+        icon: 'dashboard',
+        path: 'pickup',
+        children: [
+          {
+            name: 'Danh sách',
+            path: '',
+            component: dynamicWrapper(app, ['chart'], () => import('../routes/Shop/ShopList')),
+          },
+        ],
+      },
+      {
+        name: 'Chuyến đi giao',
+        icon: 'dashboard',
+        path: 'delivery',
+        children: [
+          {
+            name: 'Danh sách',
+            path: '',
+            component: dynamicWrapper(app, ['chart'], () => import('../routes/Shop/ShopList')),
+          },
+          {
+            name: 'Thêm',
+            path: '',
+            component: dynamicWrapper(app, ['chart'], () => import('../routes/Shop/ShopList')),
+          },
+        ],
+      },
     ],
   },
 ];
