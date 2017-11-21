@@ -20,17 +20,17 @@ export const getNavData = app => [
         icon: 'dashboard',
         path: 'dashboard',
       },
-    ],
-  },
-  {
-    component: dynamicWrapper(app, [], import('../layouts/UserLayout')),
-    path: '/user',
-    layout: 'UserLayout',
-    children: [
       {
-        name: '帐户',
-        icon: 'user',
-        path: 'user',
+        name: 'Shop',
+        icon: 'dashboard',
+        path: 'shop',
+        children: [
+          {
+            name: 'shop',
+            path: 'list',
+            component: dynamicWrapper(app, ['chart'], () => import('../routes/Shop/ShopList')),
+          },
+        ],
       },
     ],
   },
